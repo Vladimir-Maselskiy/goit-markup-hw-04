@@ -346,29 +346,37 @@ img {
   text-align: right;
   background-color: transparent;
 }
-.developers-contact-list svg {
+.icon-developer {
   width: 20px;
   height: 20px;
   fill: inherit;
 }
 
-.developers-contact-list > li {
+.developers-contact-item {
+}
+
+.developers-contact-link:hover,
+.developers-contact-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--third-text-color);
+}
+.developers-contact-link {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
   fill: #afb1b8;
 }
 
-.developers-contact-list > li:hover {
-  background-color: var(--accent-color);
-  fill: var(--third-text-color);
+.developers-contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.developers-contact-list > li:not(:last-child) {
+.developers-contact-item:not(:last-child) {
   margin-right: 10px;
 }
 /* ----------------OUR-CLIENTS-SECTION--------------- */
@@ -387,7 +395,7 @@ img {
   margin-right: 30px;
 }
 
-.clients-list > li {
+.clients-link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -397,13 +405,14 @@ img {
   border-radius: 4px;
   fill: #afb1b8;
 }
-.clients-list > li > svg {
+.icon-clients {
   width: 106px;
   height: 60px;
   fill: inherit;
 }
 
-.clients-list > li:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
@@ -471,22 +480,23 @@ img {
   color: var(--third-text-color);
   margin-bottom: 20px;
 }
-.footer-icon-list > li:not(:last-child) {
-  margin-right: 10px;
-}
 
 .footer-icon-list {
   align-items: center;
   text-align: right;
   background-color: transparent;
 }
-.footer-icon-list svg {
+
+.footer-icon-list > li {
+  margin-right: 10px;
+}
+.icon-footer {
   width: 20px;
   height: 20px;
   fill: inherit;
 }
 
-.footer-icon-list > li {
+.footer-icon-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -497,7 +507,8 @@ img {
   fill: var(--third-text-color);
 }
 
-.footer-icon-list > li:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -567,13 +578,15 @@ img {
 }
 
 .portfolio-list > li {
+  display: flex;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
   background: var(--third-text-color);
 }
 
-.portfolio-list > li:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
