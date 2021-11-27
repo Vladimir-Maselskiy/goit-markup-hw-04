@@ -460,7 +460,7 @@ img {
 .footer-right-part {
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 156px;
+  margin-left: 70px;
 }
 .footer-left-part {
   display: flex;
