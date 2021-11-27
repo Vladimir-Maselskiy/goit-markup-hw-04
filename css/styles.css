@@ -227,10 +227,10 @@ img {
 }
 
 /* ----------FEATURES-------------------------- */
-
 .feature-section {
-  padding-bottom: 0;
+  padding-top: 0;
 }
+
 .features-list > li {
   margin-right: 30px;
   width: calc((100% + 30px) / 4 - 30px);
@@ -345,6 +345,7 @@ img {
   align-items: center;
   text-align: right;
   background-color: transparent;
+  padding: 0 32px;
 }
 .icon-developer {
   width: 20px;
@@ -384,11 +385,6 @@ img {
 .our-clients-section {
   padding-top: 94px;
   padding-bottom: 88px;
-}
-
-.our-clients-section > div {
-  display: flex;
-  flex-direction: column;
 }
 
 .clients-list > li:not(:last-child) {
